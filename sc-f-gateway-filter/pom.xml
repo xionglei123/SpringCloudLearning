@@ -7,6 +7,8 @@
     <artifactId>sc-f-gateway-filter</artifactId>
     <version>0.1.0</version>
 
+    <name>sc-f-gateway-filter</name>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

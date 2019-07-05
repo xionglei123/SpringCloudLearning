@@ -12,7 +12,7 @@
 
 	<parent>
 		<groupId>com.forezp</groupId>
-		<artifactId>nacos-discovery</artifactId>
+		<artifactId>nacos-config</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
@@ -26,7 +26,7 @@
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-ribbon</artifactId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
 		</dependency>
 
 		<dependency>

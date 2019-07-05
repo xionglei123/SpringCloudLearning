@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   profiles:
-    active: add_request_header_route
+    active: request_time_route
 
 ---
 spring:
@@ -14,7 +14,7 @@ spring:
         filters:
         - AddRequestHeader=X-Request-Foo, Bar
         predicates:
-        - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+        - After=2020-01-20T17:42:47.789-07:00[America/Denver]
   profiles: add_request_header_route
 
 ---
@@ -50,9 +50,9 @@ spring:
     gateway:
       routes:
       - id: request_time_route
-        uri: http://httpbin.org:80/get
+        uri: http://httpbin.org:80/
         filters:
-        - RequestTime=false
+        - RequestTime=true
         predicates:
         - After=2017-01-20T17:42:47.789-07:00[America/Denver]
   profiles: request_time_route
